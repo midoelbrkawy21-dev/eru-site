@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الجامعة المصرية الروسية - ERU</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue: #0b3b5c;
+      --red: #b80b0b;
+      --light: #ffffff;
+      --gray: #f3f5f7;
+    }
+    * {
+      box-sizing: border-box;
+      font-family: 'Cairo', sans-serif;
+    }
+    body {
+      margin: 0;
+      background: var(--gray);
+      color: #222;
+    }
+    header {
+      background: var(--blue);
+      color: var(--light);
+      text-align: center;
+      padding: 30px 10px 40px;
+      position: relative;
+    }
+    header img {
+      width: 90px;
+      height: 90px;
+      background: white;
+      border-radius: 10px;
+      padding: 10px;
+    }
+    header h1 {
+      margin: 15px 0 5px;
+      font-weight: 700;
+      font-size: 28px;
+    }
+    header p {
+      font-size: 16px;
+      color: #eee;
+    }
+    nav {
+      background: var(--red);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 18px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background: rgba(255,255,255,0.15);
+    }
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    section:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    h2 {
+      color: var(--blue);
+      border-right: 5px solid var(--red);
+      padding-right: 10px;
+      margin-bottom: 15px;
+    }
+    p {
+      line-height: 1.8;
+      color: #444;
+    }
+    footer {
+      background: linear-gradient(45deg, var(--blue), var(--red));
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      margin-top: 60px;
+    }
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-bottom: 10px;
+    }
+    .socials a img {
+      width: 36px;
+      height: 36px;
+      filter: brightness(0) invert(1);
+      transition: transform 0.3s, filter 0.3s;
+    }
+    .socials a img:hover {
+      transform: scale(1.2);
+      filter: none;
+    }
+    @keyframes fadeInUp {
+      from {opacity:0; transform: translateY(20px);}
+      to {opacity:1; transform: translateY(0);}
+    }
+    section {
+      animation: fadeInUp 0.8s ease both;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="download.png" alt="شعار الجامعة">
+    <h1>الجامعة المصرية الروسية - ERU</h1>
+    <p>مرحبًا بكم في موقع الأنشطة والفعاليات</p>
+  </header>
+
+  <nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#about">من نحن</a>
+    <a href="#activities">الأنشطة</a>
+    <a href="#team">الفريق</a>
+    <a href="#contact">تواصل معنا</a>
+  </nav>
+
+  <main>
+    <section id="home">
+      <h2>الرئيسية</h2>
+      <p>مرحبًا بكم في الصفحة الرسمية لأنشطة الجامعة المصرية الروسية، حيث نعرض فعالياتنا وخدماتنا الطلابية في بيئة تعليمية متميزة تهدف إلى التطوير والابتكار.</p>
+    </section>
+
+    <section id="about">
+      <h2>من نحن</h2>
+      <p>نحن مجموعة من طلاب الجامعة المصرية الروسية نعمل على تنظيم فعاليات تعليمية وثقافية وترفيهية داخل الجامعة. هدفنا هو تنمية مهارات الطلبة وتعزيز روح التعاون والإبداع.</p>
+    </section>
+
+    <section id="activities">
+      <h2>أنشطتنا</h2>
+      <p>تشمل أنشطتنا ورش عمل تقنية، فعاليات رياضية، مهرجانات فنية، وأيام تطوعية. نحرص على أن تكون جميع الأنشطة ممتعة وهادفة وتخدم طلاب الجامعة في مختلف المجالات.</p>
+    </section>
+
+    <section id="team">
+      <h2>الفريق</h2>
+      <p>يضم فريقنا طلابًا من تخصصات متنوعة يجمعهم الشغف بالتنظيم والمشاركة في الأنشطة. نحن نرحب بكل من يرغب في الانضمام إلينا والمساهمة في نجاح فعاليات الجامعة.</p>
+    </section>
+
+    <section id="contact">
+      <h2>تواصل معنا</h2>
+      <p>يمكنكم التواصل معنا عبر البريد الإلكتروني: <strong>info@eru.edu.eg</strong><br>أو من خلال صفحاتنا على مواقع التواصل الاجتماعي أدناه.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="socials">
+      <a href="https://www.facebook.com/eru.university/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook"></a>
+      <a href="https://www.instagram.com/egyptianrussianuniversity/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"></a>
+      <a href="https://www.eru.edu.eg/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/google.svg" alt="Website"></a>
+    </div>
+    <p>© 2025 جميع الحقوق محفوظة - الجامعة المصرية الروسية</p>
+  </footer>
+
+</body>
+</html>
